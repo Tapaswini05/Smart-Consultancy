@@ -1,0 +1,151 @@
+{% extends 'consultancy/base.html' %}
+{% load static %}
+{% block content %}
+<!-- CSS -->
+
+
+<script>
+  var query_string = {};
+  var query = window.location.search.substring(1);
+  var vars = query.split("&");
+  for (var i = 0; i < vars.length; i++) {
+    var pair = vars[i].split("=");
+    // If first entry with this name
+    if (typeof query_string[pair[0]] === "undefined") {
+      query_string[pair[0]] = decodeURIComponent(pair[1]);
+      // If second entry with this name
+    } else if (typeof query_string[pair[0]] === "string") {
+      var arr = [query_string[pair[0]], decodeURIComponent(pair[1])];
+      query_string[pair[0]] = arr;
+      // If third or later entry with this name
+    } else {
+      query_string[pair[0]].push(decodeURIComponent(pair[1]));
+    }
+  }
+  query_string['ActualUrl'] = window.document.URL.split('?')[0];
+  var querystingified = JSON.stringify(query_string);
+</script>
+
+<!-- Global site tag (gtag.js) - AdWords: 797698401 -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=AW-797698401"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+
+  function gtag() {
+    dataLayer.push(arguments);
+  }
+  gtag('js', new Date());
+  gtag('config', 'AW-797698401');
+</script>
+
+<style>
+@media only screen and (max-width: 767px){
+    .logo-margin {
+        margin-right: 5em;
+    }
+    .mobile-nav-menu {
+        /* position: fixed; */
+        z-index: 200;
+        width: 100%;
+        height: 76px;
+        top: 0;
+    }
+    .top-margin-fix-nav {
+        margin-top: 94px;
+    }
+
+@media only screen and (min-width:768px){
+    #myHeader {
+        position: fixed;
+        top: 0;
+        width: 100%;
+        z-index: 1001;
+    }
+    .top-margin-fix-nav {
+        margin-top: 165px;
+    }
+    .nav-item {
+      padding-right: 2rem;
+      padding-top: 1rem;
+    }
+
+  .pageHeader {
+      z-index: 200;
+  }
+  a:hover{
+      text-decoration: none;
+  }
+</style>
+
+<!-- PRELOADER -->
+<div id="preloader">
+  <div class="battery inner">
+    <div class="load-line"></div>
+  </div>
+</div>
+
+<div id="wrap">
+
+    <h1 style="position: relative;top: 100px;left: 140px;" class="visible-md-block visible-lg-block hidden-xs visible-sm-block"></h1>
+  <!-- MAIN BEGIN -->
+  <div class="heading">
+    <h1><b>Select your health problem</b></h1>
+  </div>
+    <div class='bannerImage'>
+      <img src="{%static 'images/11.jpg' alt='Medical Specialists' width='80%' height='50%' style='margin-down: -200px;' %}">
+    </div>
+    <div class="container" style="margin-top:30px;">
+      <div class="row" style="padding-top:40px;">
+        <div class="col-md-4 col-sm-6 col-xs-12">
+          <a href="{% url 'gyno' %}" class="specialityLinks">
+            <div class="splCard">
+              <div style="text-align:center;">
+                  <img src="{%static 'images/4.jpeg'  width='20%' height='20%' style='margin-center: -200px;' %}">
+                <p><span class="icon-Gynecology specialitiesIcons" style="font-size:54px;"></span></p>
+              </div>
+              <h4 style="text-align:center;">Gynecology</h4>
+            </div>
+          </a>
+        </div>
+        <div class="col-md-4 col-sm-6 col-xs-12">
+          <a href="{% url 'derma' %}" class="specialityLinks">
+            <div class="splCard">
+              <div style="text-align:center;">
+                  <img src="{%static 'images/8.png'  width='20%' height='20%' style='margin-center: -200px;' %}">
+                <p><span class="icon-Dermatology specialitiesIcons" style="font-size:54px;"></span></p>
+              </div>
+              <h4 style="text-align:center;">Dermatology</h4>
+            </div>
+          </a>
+        </div>
+        <div class="col-md-4 col-sm-6 col-xs-12">
+          <a href="/health/trichology" class="specialityLinks">
+            <div class="splCard">
+              <div style="text-align:center;">
+                  <img src="{%static 'images/5.jpeg'  width='20%' height='20%' style='margin-center: -200px;' %}">
+                <p><span class="icon-Hair-Scalp specialitiesIcons" style="font-size:54px;"></span></p>
+              </div>
+              <h4 style="text-align:center;">HairCare</h4>
+            </div>
+          </a>
+        </div>
+        <div class="col-md-4 col-sm-6 col-xs-12">
+          <a href="/health/generalmedicine" class="specialityLinks">
+            <div class="splCard">
+              <div style="text-align:center;">
+                  <img src="{%static 'images/6.jpeg'  width='20%' height='20%' style='margin-center: -200px;' %}">
+                <p><span class="icon-General-Medicine specialitiesIcons" style="font-size:54px;"></span></p>
+              </div>
+              <h4 style="text-align:center;">General Medicine</h4>
+            </div>
+          </a>
+        </div>
+      <div id="sticky-anchor"></div>
+      <div id="sticky"></div>
+      <br>
+      <br>
+    </div>
+<!-- MAIN END -->
+{% endblock content %}
+
+

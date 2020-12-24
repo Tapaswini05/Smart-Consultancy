@@ -1,0 +1,1164 @@
+{% extends 'consultancy/base.html' %}
+{% load static %}
+{% block content %}
+<html lang="en" class="no-js">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>
+      Gynecology - Best Online Gynecologists | Treatment for UTI, PCOD &amp; Periods
+    </title>
+
+    <!-- necessary things -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+
+
+
+    <script defer type="application/ld+json">
+      {
+        "@context": "http://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "item": {
+              "@id": "https://www.docsapp.in",
+              "name": "SmartApp"
+            }
+          },
+
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "item": {
+                "@id": "https://www.docsapp.in/health/gynecology",
+                "name": "Gynecology"
+              }
+            }
+
+
+        ]
+      }
+    </script>
+
+    <script type="application/ld+json">
+      {
+          "@context": "https://schema.org",
+          "@type": "FAQPage",
+          "speakable":
+        {
+          "@type": "SpeakableSpecification",
+          "cssSelector": ["qa", "ans"]
+          },
+
+          "mainEntity": [
+
+
+
+              {
+                        "@type": "Question",
+                        "name": "What Is Gynecology?",
+                        "acceptedAnswer": {
+                          "@type": "Answer",
+                          "text": "Gynecology is the branch of medical science which deals with the reproductive health of women. It is concerned with the vagina, uterus, ovaries and breasts. A doctor specialised in the diagnosis and treatment of gynecology is known as a gynecologist. Gynecology and obstetrics which is the branch of medicine concerned with childbirth are very closely related and most of their functions overlap."
+                        }
+                      }
+             ,
+
+
+
+
+              {
+                        "@type": "Question",
+                        "name": "Who Is A Gynecologist?",
+                        "acceptedAnswer": {
+                          "@type": "Answer",
+                          "text": "A gynecologist is a doctor trained in the medical specialty and practice of gynecology. They undergo a post-graduation in medical education and professional development course as a part of practice."
+                        }
+                      }
+             ,
+
+
+
+
+              {
+                        "@type": "Question",
+                        "name": "What Are The Most Common Gynecological Conditions?",
+                        "acceptedAnswer": {
+                          "@type": "Answer",
+                          "text": "Female reproductive organs undergo constant change during a woman’s fertile life, whether it is aging, menstrual or sexual activity. Some of the most common gynecological conditions women experience are menstrual disorders, ovarian cysts, urinary incontinence, endometriosis, cervical dysplasia, abnormal uterine bleeding and vaginitis. Also, the key remedies involved for the treatment of such issues are Hysterectomy, Myomectomy and Laparoscopy."
+                        }
+                      }
+
+
+
+          ,
+
+              {
+                        "@type": "Question",
+                        "name": "What Do Our Gynecologists Treat?",
+                        "acceptedAnswer": {
+                          "@type": "Answer",
+                          "text": "Gynecologists in india are also trained in obstetrics, which means that they are certified to take care of pregnant women. A gynecologist in general is well versed with issues dealing with women’s health and issues related to the reproductive system. Our team of male and female gynecologists believe that intimate issues concerned with women’s health, are to be treated with patience and compassion.
+
+Here are some of the common gynecological issues which our doctors deal with."
+                        }
+                      }
+
+
+
+        ]
+       }
+      </script>
+
+ <style>
+    #footer {
+        background-color: #03a62c;
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+    .card {
+        box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.12);
+        border-radius: 8px;
+    }
+    .row-margin-new {
+        margin: 23px 7px;
+    }
+    .blue-col {
+        color: #5225b4;
+    }
+    .button-3 {
+        border-radius: 23px;
+        outline: none !important;
+        color: white;
+        border-radius: 23px;
+        background-color: #03a62c;
+        border: none;
+        padding: 7px 22px 9px 22px;
+    }
+    .font-25 {
+        font-size: 25px;
+    }
+    .font-18 {
+        font-size: 18px;
+    }
+    .row-card {
+        box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.12);
+        border-radius: 8px;
+        padding: 1rem;
+    }
+    .center-align {
+        text-align: center;
+    }
+    .round-img-new {
+        width: 86px;
+        height: 84px;
+        border: solid 1px #03aa85;
+        border-radius: 50%;
+    }
+    .bottom-p {
+        margin-bottom: 4px;
+    }
+    .bottom-p-2 {
+        margin-bottom: 2px;
+    }
+    .font-16 {
+        font-size: 16px;
+    }
+    .font-14 {
+        font-size: 14px;
+    }
+    .font-12 {
+        font-size: 12px;
+    }
+    .grey-col {
+        color: #7f7f7f;
+    }
+    .font-10 {
+        font-size: 10px;
+    }
+    .star-class {
+        width: 20px;
+        vertical-align: sub;
+    }
+    .subtopic-span {
+        background-color: white;
+        border-radius: 8px;
+        padding: 4px 2px 6px 6px;
+        line-height: 30px;
+        border: 1px solid rgba(0,0,0,.125);
+    }
+    .button-2 {
+        margin-top: 8px;
+        border-radius: 23px;
+        outline: none !important;
+        color: white;
+        border-radius: 23px;
+        background-color: #03a62c;
+        border: none;
+        padding: 7px 60px 9px 60px;
+    }
+    .view {
+        padding: 15px 0 0 0;
+        border-top: 1px solid #5225b4;
+        color: #5225b4;
+        cursor: pointer;
+    }
+    .p-bot-30 {
+        padding-bottom: 30px;
+    }
+    .none {
+        display: none;
+    }
+    .headline h2, .headline p {
+        display: inline;
+    }
+    .meds-tag {
+        border: 1px solid rgba(0,0,0,.125);
+        padding: 10px;
+        background-color: white;
+        border-radius: 8px;
+    }
+    .sub-color {
+        color: #8c8888;
+    }
+    .view-more-btn {
+        border-radius: 25px;
+        background: white;
+        border: solid 0.5px #5225b4;
+        padding: 6px 10px 7px 14px;
+        font-weight: 600;
+    }
+    .specialize-2 {
+        background-color: white;
+        border-radius: 8px;
+        padding: 14px 18px;
+        line-height: 58px;
+        border: 1px solid rgba(0,0,0,.125);
+    }
+</style>
+  </head>
+  <body>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TM36ZVP"height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+
+    <!-- helper functions -->
+    <!-- rating calculator -->
+
+    <style>
+
+/*////////////////////// OPTIONAL STYLES ////////////////////////*/
+.bg-fullscreen {
+  background-image: url(https://source.unsplash.com/4000x2500/?fitness);
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.overlay {
+  position: fixed;
+  display: block;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: white;
+  z-index: 2;
+}
+
+.overlay-title {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  font-size: 50px;
+  color: white;
+  transform: translate(-50%,-50%);
+  -ms-transform: translate(-50%,-50%);
+  text-shadow: 0px 0px 2px #ffffff;
+}
+
+.navbar {
+  box-shadow: 0px 0px 10px 2px #000000ad;
+}
+.nav-link {
+  color: black;
+  transition: .3s;
+}
+.nav-link:hover {
+  color: black;
+  box-shadow: 0px 0px 4px 1px #ffffff85;
+  text-shadow: 0px 0px 1px white;
+}
+
+.navbar-toggler {
+  transition: .5s;
+  border: 2px solid #ffffff9e;
+  color: black;
+}
+
+.sidenav .nav-link {
+  white-space: nowrap;
+  transition: .3s;
+}
+.sidenav .nav-link:hover {
+  background-color: #a7a7a766;
+}
+
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 60px;
+  line-height: 60px;
+  background-color: #00000057;
+  /* z-index: 1030; */
+  box-shadow: 0px 0px 10px 2px #000000ad;
+  color: lightgray;
+  text-shadow: 0px 0px 1px white;
+}
+
+.fa, .fab, .fal, .far, .fas {
+  font-size: 1.25rem;
+}
+
+.btn-outline-light {
+  border: none;
+}
+.btn-outline-light:hover {
+  color: white;
+  border-radius: 0px;
+  background: transparent;
+  box-shadow: 0px 0px 4px 1px #ffffff85;
+  text-shadow: 0px 0px 1px white;
+}
+
+.navbar {
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.08);
+}
+
+a {
+  color: black;
+}
+
+a:hover {
+  color: grey;
+}
+
+.Fill-263 {
+  width: 16.6px;
+  height: 30px;
+  opacity: 0.48;
+  background-color: #03aa85;
+}
+.navbar-toggle .navbar-light {
+  border-color:white;
+}
+.span-left {
+  padding-left: 6px;
+}
+.nav-item {
+  padding-right: 1.5rem;
+}
+.img-wid {
+  width: 20px;
+}
+.navbar-default .navbar-nav>li>a {
+  color: black;
+}
+.nav-font {
+  font-size: 16px;
+}
+.nav-font2 {
+  font-size: 13px;
+  color: #8c8888;
+}
+.navbar-default {
+  background-color: white;
+}
+.mobile-nav-header {
+  padding: 1.122rem;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.08);
+}
+.fa-class {
+  font-size: 24px;
+  float: right;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+}
+
+.sticky + .content {
+  padding-top: 102px;
+}
+
+.card-body:hover{
+transform: scale(1.05);
+  box-shadow: 0 10px 20px rgba(0,0,0,.12), 0 4px 8px rgba(0,0,0,.06);}
+
+@media only screen and (max-width: 767px){
+    .logo-margin {
+        margin-right: 5em;
+    }
+    .mobile-nav-menu {
+        /* position: fixed; */
+        z-index: 200;
+        width: 100%;
+        height: 76px;
+        top: 0;
+    }
+    .top-margin-fix-nav {
+        margin-top: 94px;
+    }
+
+@media only screen and (min-width:768px){
+    #myHeader {
+        position: fixed;
+        top: 0;
+        width: 100%;
+        z-index: 1001;
+    }
+    .top-margin-fix-nav {
+        margin-top: 165px;
+    }
+    .nav-item {
+      padding-right: 2rem;
+      padding-top: 1rem;
+    }
+
+  .pageHeader {
+      z-index: 200;
+  }
+  a:hover{
+      text-decoration: none;
+  }
+
+
+</style>
+
+<header class="header" id="fixHeaderNav" style=" width: 100%; z-index: 10;font-family: 'Poppins';">
+
+
+    <nav class="navbar navbar-expand-md navbar-default mobile-nav-menu" >
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarContent"
+                aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation" style="color: black !important">
+            <i class="fas fa-bars"></i>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarContent">
+            <ul class="navbar-nav ml-auto desktop-nav" style="display:none;">
+                <li class="nav-item">
+                    <a class="nav-font"> Doctors<br><p class="nav-font2">Consult Online</p></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-font" >Medicines<br><p class="nav-font2">View Directory</p></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-font" >Labs<br><p class="nav-font2">Book a Test</p></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-font" >SmartApp<br><p class="nav-font2">Unlimited Consultation</p></a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+</header>
+
+<script>
+    $(document).ready(() => {
+        navbarAdjust();
+        // window.onscroll = function() {
+        //     scrollFixNav();
+        // }
+    })
+    // var header = document.getElementById("myHeader");
+    // var sticky = header.offsetTop;
+
+    // function scrollFixNav(event) {
+    //     if (window.pageYOffset > sticky) {
+    //         header.classList.add("sticky");
+    //     } else {
+    //         header.classList.remove("sticky");
+    //     }
+    // }
+    window.onscroll = function() {fixHeader()};
+
+    var header = document.getElementById("fixHeaderNav");
+    var sticky = header.offsetTop;
+
+    function fixHeader() {
+      if (window.pageYOffset > sticky) {
+        header.classList.add("sticky");
+      } else {
+        header.classList.remove("sticky");
+      }
+    }
+
+    function navbarAdjust() {
+        var width = $(window).width();
+        if(width < 768) {
+            // $(".desktop-nav").css({"display": "none"});
+            $(".mobile-nav").show();
+            $(".desktop-nav").hide();
+        } else {
+            // $(".mobile-nav").css({"display":"none"});
+            $(".desktop-nav").show();
+            $(".mobile-nav").hide();
+        }
+    }
+
+    // $(document).ready( () => {
+    //     navbarAdjust();
+    // });
+    // $(window).resize( () => {
+
+    // });
+
+    var $sidenav = $('.sidenav'),
+    $toggler = $('.navbar-toggler'),
+    collapsed = false;
+
+    $sidenav.css('top', '0');
+
+    if (window.innerWidth < 768) {
+        collapse();
+    }
+
+    $(window).resize(function() {
+        navbarAdjust();
+        if (window.innerWidth < 768) {
+            collapse();
+        } else {
+            restore();
+        }
+    });
+
+    $toggler.click(function() {
+        if (!$sidenav.hasClass('show')) {
+            showSidenav();
+        } else {
+            hideSidenav();
+        }
+        })
+
+        $(".navbar-toggler-mob").click( () => {
+        hideSidenav();
+    })
+
+    function showSidenav() {
+        $sidenav.css('display', 'flex');
+        window.setTimeout(function() {
+            // Must be number value. Adjust as needed.
+            $sidenav.css({
+            'width':'80%',
+            'bottom': '0',
+            'box-shadow':'-10px 10px 512px 256px #000000cc',
+            'background-color':'#fff',
+            'position': 'fixed',
+            'bottom' : '0'
+            });
+        }, 10);
+        $toggler.css('color', 'white');
+        $sidenav.addClass('show');
+    }
+
+    function hideSidenav() {
+        $sidenav.css({
+            'width':'0px',
+            'box-shadow':'none',
+            'background':'transparent'
+        });
+        window.setTimeout(function() {
+            $sidenav.css('display', 'none');
+        }, 200);
+        $toggler.css('color', 'black')
+        $sidenav.removeClass('show');
+    }
+
+    function collapse() {
+        if (!collapsed) {
+            $('.navbar-collapse > ul').appendTo('.sidenav').addClass('w-100');
+            $('.sidenav > ul .nav-link').addClass('w-100');
+            collapsed = true;
+        }
+    }
+
+    function restore() {
+        if (collapsed) {
+            $('.sidenav > ul').appendTo('.navbar-collapse').removeClass('w-100');
+            $('.sidenav > ul .nav-link').removeClass('w-100');
+            hideSidenav();
+            collapsed = false;
+        }
+    }
+
+</script>
+    <!-- <div class="top-margin-fix-nav"></div> -->
+
+    <div class="row" style="margin-left: 15px;">
+      <div class="col-md-12 col-12">
+        <p class="font-14 p-bottom-margin" style="margin-top: 1rem;">
+            <span style="color: #8c8888;">Home /</span>
+                <span style="color: #7f7f7f;"><b>Gynecology</b></span>
+        </p>
+      </div>
+    </div>
+
+    <div class="row row-margin-new row-card" style="margin: 23px !important;">
+      <div class="col-lg-5 col-md-5 col-12">
+        <h1 class="blue-col font-25"> Suffering from UTI &amp; PCOD? </h1>
+        <h2 class="blue-col font-18">
+          Talk to our verified Gynecologist
+        </h2><br>
+        <div>
+          <a id="chanTrack2">
+            <button class="button-3"> consult a Gynecologist Now</button>
+          </a>
+        </div>
+        <br>
+      </div>
+      <div class="col-lg-7 col-md-7 col-12">
+        <h3 class="blue-col font-16 center-align"> Over 200+ Verified Gynecologists available over chat and phone call </h3><br>
+        <div class="row">
+
+          <div class="col-lg-4 col-md-4 col-4">
+              <a>
+                <div style="text-align: center">
+                    <picture>
+                        <source type="image/webp" srcset="https://da-img.s3.amazonaws.com/DocApp+Doc+Images/default+doc+icon.webp">
+                        <img class="round-img-new" srcset="https://da-img.s3.amazonaws.com/DocApp+Doc+Images/default+doc+icon.jpg"  alt="SmartApp Doctor">
+                    </picture>
+                    <p class="bottom-p font-16"><b> Dr. Twinkle Singh </b></p>
+                  <p class="bottom-p font-12"> MD Gynecology </p>
+                </div>
+              </a>
+            </div>
+
+            <div class="col-lg-4 col-md-4 col-4">
+              <a>
+                <div style="text-align: center">
+                    <picture>
+                        <source type="image/webp" srcset="https://da-img.s3.amazonaws.com/DocApp+Doc+Images/default+doc+icon.webp">
+                        <img class="round-img-new" srcset="https://da-img.s3.amazonaws.com/DocApp+Doc+Images/default+doc+icon.jpg"  alt="SmartApp Doctor">
+                    </picture>
+                    <p class="bottom-p font-16"><b> Dr. Sapna Rani Mishra</b></p>
+                  <p class="bottom-p font-12">MBBS, MD -Gynecology</p>
+                </div>
+              </a>
+            </div>
+
+            <div class="col-lg-4 col-md-4 col-4">
+              <a>
+                <div style="text-align: center">
+                    <picture>
+                        <source type="image/webp" srcset="https://da-img.s3.amazonaws.com/DocApp+Doc+Images/default+doc+icon.webp">
+                        <img class="round-img-new" srcset="https://da-img.s3.amazonaws.com/DocApp+Doc+Images/default+doc+icon.jpg"  alt="SmartApp Doctor">
+                    </picture>
+                    <p class="bottom-p font-16"><b> Dr. Tapaswini Behera </b></p>
+                  <p class="bottom-p font-12">MBBS, MD -Gynecology</p>
+                </div>
+              </a>
+            </div>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="row row-margin-new">
+      <div class="col-lg-8 col-md-8 col-12">
+        <h2 class="blue-col font-16"> Top Verified Gynecologists near you </h2>
+        <div class="row card-columns">
+
+            <div class="col-lg-12 col-md-12 col-12">
+
+
+
+
+<script>
+    function detectmob() {
+        if( navigator.userAgent.match(/Android/i)
+
+        || navigator.userAgent.match(/Windows Phone/i)
+        ){
+            return true;
+        }
+        else {
+            return false;
+        }
+    }
+</script>
+
+<div class="card card-body">
+    <div class="row">
+        <div class="col-lg-6 col-md-6 col-12">
+            <div class="row">
+                <div class="col-lg-4 col-md-4 col-4">
+                    <picture>
+                        <source type="image/webp" srcset="https://da-img.s3.amazonaws.com/DocApp+Doc+Images/default+doc+icon.webp">
+                        <img class="round-img-new" srcset="https://da-img.s3.amazonaws.com/DocApp+Doc+Images/default+doc+icon.jpg"  alt="SmartApp Doctor">
+                    </picture>
+                </div>
+                <div class="col-lg-8 col-md-8 col-8">
+                      <a><h3 class="bottom-p-2 font-16"> Dr. Twinkle Singh </h3></a>
+                    <p class="grey-col font-12 bottom-p-2"> MD Gynecology </p>
+                    <p class="grey-col font-12 bottom-p-2"> 5 Years Experience </p>
+                    <img class="star-class" src="https://docsappwebsite2017.s3-us-west-2.amazonaws.com/website_assets/new-svg-images/rating-star.svg" alt="Online Doctor Rating">
+                    <span> 4.8 </span>
+                    <p class="grey-col font-10"> 1146 reviews </p>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-6 col-md-6 col-12">
+           <br>
+           <div class="center-align mob-center">
+                <button class="button-2 font-12"> Consult Now</button>
+                </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    $(document).ready(() => {
+        if(detectmob()){
+            $('.mob-center').css("text-align", "center");
+        } else {
+            $('.mob-center').css("text-align", "left");
+        }
+    })
+
+</script>
+            </div>
+
+            <div class="col-lg-12 col-md-12 col-12">
+
+<script>
+    function detectmob() {
+        if( navigator.userAgent.match(/Android/i)
+
+        || navigator.userAgent.match(/Windows Phone/i)
+        ){
+            return true;
+        }
+        else {
+            return false;
+        }
+    }
+</script>
+
+<div class="card card-body">
+    <div class="row">
+        <div class="col-lg-6 col-md-6 col-12">
+            <div class="row">
+                <div class="col-lg-4 col-md-4 col-4">
+                    <picture>
+                        <source type="image/webp" srcset="https://da-img.s3.amazonaws.com/DocApp+Doc+Images/default+doc+icon.webp">
+                        <img class="round-img-new" srcset="https://da-img.s3.amazonaws.com/DocApp+Doc+Images/default+doc+icon.jpg" alt="SmartApp Doctor">
+                    </picture>
+                </div>
+                <div class="col-lg-8 col-md-8 col-8">
+                    <a><h3 class="bottom-p-2 font-16"> Dr. Sapna Rani Mishra </h3></a>
+                    <p class="grey-col font-12 bottom-p-2"> MBBS, MD -Gynecology</p>
+                    <p class="grey-col font-12 bottom-p-2"> 10 Years Experience </p>
+                    <img class="star-class" src="https://docsappwebsite2017.s3-us-west-2.amazonaws.com/website_assets/new-svg-images/rating-star.svg" alt="Online Doctor Rating">
+                    <span> 4.2 </span>
+                    <p class="grey-col font-10"> 1025 reviews </p>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-6 col-md-6 col-12">
+
+              <br>
+                <div class="center-align mob-center">
+                <button class="button-2 font-12"> Consult Now</button>
+                </div>
+        </div>
+    </div>
+</div>
+<script>
+    $(document).ready(() => {
+        if(detectmob()){
+            $('.mob-center').css("text-align", "center");
+        } else {
+            $('.mob-center').css("text-align", "left");
+        }
+    })
+
+</script>
+            </div>
+
+            <div class="col-lg-12 col-md-12 col-12">
+
+<script>
+    function detectmob() {
+        if( navigator.userAgent.match(/Android/i)
+
+        || navigator.userAgent.match(/Windows Phone/i)
+        ){
+            return true;
+        }
+        else {
+            return false;
+        }
+    }
+</script>
+
+<div class="card card-body">
+    <div class="row">
+        <div class="col-lg-6 col-md-6 col-12">
+            <div class="row">
+                <div class="col-lg-4 col-md-4 col-4">
+                    <picture>
+                        <source type="image/webp" srcset="https://da-img.s3.amazonaws.com/DocApp+Doc+Images/default+doc+icon.webp">
+                        <img class="round-img-new" srcset="https://da-img.s3.amazonaws.com/DocApp+Doc+Images/default+doc+icon.jpg" alt="SmartApp Doctor">
+                    </picture>
+                </div>
+                <div class="col-lg-8 col-md-8 col-8">
+                    <a><h3 class="bottom-p-2 font-16"> Dr. Tapaswini Behera</h3></a>
+                    <p class="grey-col font-12 bottom-p-2"> MBBS, MD -Gynecology</p>
+                    <p class="grey-col font-12 bottom-p-2"> 10 Years Experience </p>
+                    <img class="star-class" src="https://docsappwebsite2017.s3-us-west-2.amazonaws.com/website_assets/new-svg-images/rating-star.svg" alt="Online Doctor Rating">
+                    <span> 4.9 </span>
+                    <p class="grey-col font-10"> 1106 reviews </p>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-6 col-md-6 col-12">
+           <br>
+                <div class="center-align mob-center">
+                <button class="button-2 font-12"> Consult Now</button>
+                </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    $(document).ready(() => {
+        if(detectmob()){
+            $('.mob-center').css("text-align", "center");
+        } else {
+            $('.mob-center').css("text-align", "left");
+        }
+    })
+
+</script>
+            </div>
+
+        </div>
+
+        <div class="row">
+          <div class="col-lg-12 col-md-12 col-12">
+            <div class="card card-body">
+
+                    <h2 class="font-16 qa">
+                      What  Is  Gynecology?
+                    </h2>
+                    <p class="font-14 ans">
+                      Gynecology is the branch of medical science which deals with the reproductive health of women. It is concerned with the vagina, uterus, ovaries and breasts. A doctor specialised in the diagnosis and treatment of gynecology is known as a gynecologist. Gynecology and obstetrics which is the branch of medicine concerned with childbirth are very closely related and most of their functions overlap.
+                    </p>
+
+                    <h2 class="font-16 qa">
+                      Who  Is  A  Gynecologist?
+                    </h2>
+                    <p class="font-14 ans">
+                      A gynecologist is a doctor trained in the medical specialty and practice of gynecology. They undergo a post-graduation in medical education and professional development course as a part of practice.
+                    </p>
+
+                    <h2 class="font-16 qa">
+                      What  Are  The  Most  Common  Gynecological  Conditions?
+                    </h2>
+                    <p class="font-14 ans">
+                      Female reproductive organs undergo constant change during a woman’s fertile life, whether it is aging, menstrual or sexual activity. Some of the most common gynecological conditions women experience are menstrual disorders, ovarian cysts, urinary incontinence, endometriosis, cervical dysplasia, abnormal uterine bleeding and vaginitis. Also, the key remedies involved for the treatment of such issues are Hysterectomy, Myomectomy and Laparoscopy.
+                </p>
+                  <br><br>
+                </div>
+
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- questions  -->
+
+          <h2 class="font-16 blue-col" style="margin-top: 1rem"> Commonly Asked Questions - Gynecology </h2>
+          <h3 class="font-16 sub-color" style="margin-bottom: 1rem">
+            ? 10+ Questions related to Gynecology treated by Online Gynecologist
+          </h3>
+          <div class="row">
+            <div class="col-lg-6 col-md-6 col-12">
+
+<style>
+.font-14 {
+    font-size: 14px;
+}
+.button {
+    background-color: white;
+    border-radius: 20px;
+    border-color: #03aa85;
+    padding: 6px 7px 7px 7px;
+    color: #03aa85;
+    outline: none !important;
+    border-style: solid;
+}
+</style>
+<div class="row card-columns" id="expand-question">
+
+        <div class="col-md-12">
+            <div class="card card-body font-14">
+                <div class="row">
+                    <div class="col-md-1 col-lg-1 col-1">
+                        <img class="img-float question-logo" src="https://docsappwebsite2017.s3-us-west-2.amazonaws.com/website_assets/topic_images/Gynacology.svg" alt="Questions on Speciality">
+                    </div>
+                    <div class="col-md-11 col-lg-11 col-11">
+                        <h5 class="font-14">
+                        <b>Gynecology </b>
+                        </h5>
+                        <p>
+                        i am a thyroid patient and having problem in my periods
+                        </p>
+                        <hr>
+                        <p>
+                        <span style="float: left; white-space: normal !important;">
+                            23 Yrs, Female, Jaipur
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-12">
+            <div class="card card-body font-14">
+                <div class="row">
+                    <div class="col-md-1 col-lg-1 col-1">
+                        <img class="img-float question-logo" src="https://docsappwebsite2017.s3-us-west-2.amazonaws.com/website_assets/topic_images/Gynacology.svg" alt="Questions on Speciality">
+                    </div>
+                    <div class="col-md-11 col-lg-11 col-11">
+                        <h5 class="font-14">
+                        <b>Gynecology </b>
+                        </h5>
+                        <p>
+                        Dear sir/mam
+Actually I had my last period in 2nd May but this month I didn&#39;t get periods one of the Dr suggested me to take primolut N to geting period bt it has been finished last 2 day ago still I am not getting period.. So what can I do whether I will
+                        </p>
+                        <hr>
+                        <p>
+                        <span style="float: left; white-space: normal !important;">
+                            24 Yrs, Female, India
+                        </span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+</div>
+<div id="question-loader" style="text-align: center; margin-bottom: 10px; display: none">
+        <div class="ldio-j9dq0amz47">
+        <div></div>
+        </div>
+    </div>
+
+<style type="text/css">
+    @keyframes ldio-j9dq0amz47 {
+      0% { transform: translate(-50%,-50%) rotate(0deg); }
+      100% { transform: translate(-50%,-50%) rotate(360deg); }
+    }
+    .ldio-j9dq0amz47 div {
+      position: absolute;
+      width: 30px;
+      height: 30px;
+      border: 5px solid #04a62d;
+      border-top-color: transparent;
+      border-radius: 50%;
+    }
+    .ldio-j9dq0amz47 div {
+      animation: ldio-j9dq0amz47 1s linear infinite;
+      top: 25px;
+      left: 25px
+    }
+    .loadingio-spinner-rolling-vj39f3ouya {
+      width: 50px;
+      height: 50px;
+      display: inline-block;
+      overflow: hidden;
+      background: #ffffff;
+    }
+    .ldio-j9dq0amz47 {
+      width: 100%;
+      height: 100%;
+      position: relative;
+      transform: translateZ(0) scale(1);
+      backface-visibility: hidden;
+      transform-origin: 0 0; /* see note above */
+    }
+    .ldio-j9dq0amz47 div { box-sizing: content-box; }
+    /* generated by https://loading.io/ */
+    </style>
+<script>
+    let processingQuestion = false;
+    let questionPageNumber = 1;
+    let getNavPoint = (questionobj, SEOtopic) => {
+        var url = "https://www.docsapp.in/health/";
+        var topic = SEOtopic || questionobj.SEOtopic;
+        var stl1 = questionobj.SEOStl1;
+        if(topic){
+            url+=topic.name+"/"
+        }
+        if(stl1){
+            url+=stl1.name+"/"
+        }
+        url+="questions/"+questionobj.consultationId;
+        url+= (questionobj.slug && questionobj.slug.length > 0)?('-' + questionobj.slug):'';
+
+        return url;
+    }
+
+    let getQuestions = () => {
+        if(processingQuestion){
+            return;
+        }
+        processingQuestion = true;
+        $("#question-loader").show();
+        $.get("questions/ajax?page="+questionPageNumber, data => {
+            data.questions.forEach(question => {
+                let templete = renderJson(data.SEOtopic, question);
+                $("#expand-question").append(templete);
+            });
+            questionPageNumber = questionPageNumber + 1;
+            processingQuestion = false;
+            $("#question-loader").hide();
+        })
+    }
+
+    let renderJson = (SEOtopic, questionobj) => {
+        let subtopic = (questionobj.SEOStl1 && questionobj.SEOStl1.genericName) ? '> ' +  questionobj.SEOStl1.genericName.replace(/([A-Z])/g, ' $1').trim() : " " ;
+        let templete = '<div class="col-md-12">'+
+            '<div class="card card-body font-14">'+
+            '   <div class="row">'+
+            '        <div class="col-md-1 col-lg-1 col-1">'+
+            '            <img class="img-float question-logo" src=" '+ SEOtopic.image +' " alt="">'+
+            '        </div>'+
+            '        <div class="col-md-11 col-lg-11 col-11">'+
+            '            <h5 class="font-14">'+
+            '            <b>'+ SEOtopic.genericName+' '+subtopic+'</b>'+
+            '            </h5>'+
+            '            <p>  '+
+            '            '+questionobj.question +
+            '            </p>'+
+            '            <hr>'+
+            '            <p>'+
+            '            <span style="float: left; white-space: normal !important;">'+ questionobj.age+' Yrs, ' + questionobj.gender + ', ' + questionobj.city  + '</span>'+
+            '            <a href=" '+ getNavPoint(questionobj, SEOtopic)+ ' "><span class="float: right"><button class="button" > Read More</button></span></a>'+
+            '            </p>'+
+            '        </div>'+
+            '    </div>'+
+            '</div>'+
+        '</div>';
+
+        return templete;
+    }
+$(document).ready(() => {
+        // getQuestions(1);
+    })
+</script>
+                  </div>
+
+              </div>
+
+      <div class="col-lg-4 col-md-8 col-12">
+        <p class="blue-col font-16"> Read more queries about Dermatology </p>
+ </div>
+        <!-- subtopic card -->
+
+<style>
+.div-padding {
+    padding-right: 0%;
+    padding-left: 10px;
+}
+.font-14 {
+    font-size: 14px;
+}
+.specialize-2 {
+    background-color: white;
+    border-radius: 8px;
+    padding: 14px 18px;
+    line-height: 58px;
+    border: 1px solid rgba(0,0,0,.125);
+}
+</style>
+
+<div class="row card-columns">
+    <div class="col-md-12" >
+        <div class="card card-body font-14">
+            <div class="line-height">
+
+                    <span class="specialize-2" style="white-space: pre;"><a class="font-class span-color-2">Acne</a></span>
+
+                    <span class="specialize-2" style="white-space: pre;"><a class="font-class span-color-2">Itching  Rashes</a></span>
+
+                    <span class="specialize-2" style="white-space: pre;"><a class="font-class span-color-2">Face  Tan</a></span>
+
+                    <span class="specialize-2" style="white-space: pre;"><a class="font-class span-color-2">Skin  Disease</a></span>
+
+                    <span class="specialize-2" style="white-space: pre;"><a class="font-class span-color-2">Psoriasis</a></span>
+
+                    <span class="specialize-2" style="white-space: pre;"><a class="font-class span-color-2">Pigmentation</a></span>
+                '
+                    <span class="specialize-2" style="white-space: pre;"><a class="font-class span-color-2">Fungal  Infection</a></span>
+
+                    <span class="specialize-2" style="white-space: pre;"><a class="font-class span-color-2">Genital  Skin  Issues</a></span>
+
+                    <span class="specialize-2" style="white-space: pre;"><a class="font-class span-color-2">Ringworm</a></span>
+
+                    <span class="specialize-2" style="white-space: pre;"><a class="font-class span-color-2">Eczema</a></span>
+
+            </div>
+        </div>
+    </div>
+</div>
+        <!-- frequenlty bought medicines -->
+        <br>
+        <p class="blue-col font-16"> Frequently Bought Products/Medicines  </p>
+        <div class="row">
+          <div class="col-lg-12 col-md-12 col-12">
+            <div class="card card-body font-14">
+                <div class="line-height">
+
+                      <span class="specialize-2" style="white-space: pre;">Stimat Tablet</span>
+
+                      <span class="specialize-2" style="white-space: pre;">Sertex Tablet</span>
+
+                      <span class="specialize-2" style="white-space: pre;">Hepa Gard Tablet</span>
+
+                      <span class="specialize-2" style="white-space: pre;">Osogerd DSR Capsule</span>
+
+                      <span class="specialize-2" style="white-space: pre;">celin Tablet</span>
+
+                      <span class="specialize-2" style="white-space: pre;">Electral</span>
+
+                      <span class="specialize-2" style="white-space: pre;">Lamostad Tablet</span>
+
+                      <span class="specialize-2" style="white-space: pre;">suncros soft sunscreen</span>
+                      <span class="specialize-2" style="white-space: pre;">ciplox eye drops</span>
+                      <span class="specialize-2" style="white-space: pre;">Rabevera DSR Capsule</span>
+                </div>
+            </div>
+          </div>
+    </div>
+  </body>
+</html>
+
+
+{% endblock content %}
